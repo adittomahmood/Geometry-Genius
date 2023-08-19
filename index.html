@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Geometry Genius - Interactive Geometry Calculators"
+    />
+    <title>Geometry Genius</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl p-10 max-sm:text-3xl bg-[#1090D81A]">
+        Interactive <br />Geometry-Genius
+      </h1>
+    </header>
+    <main>
+      <div
+        class="flex max-sm:items-center gap-4 text-center max-sm:flex-col max-sm:justify-center max-sm:space-y-4"
+      >
+        <!-- Triangle Card -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="bg-[#FBBCED;;]">
+            <figure>
+              <img
+                src="./geometry-genius-resources/images/triangle.png"
+                alt="Triangle"
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="card-title flex justify-center">Triangle</h2>
+              <p>Area (A) = 0.5 x h x b</p>
+              <p class="flex gap-3 justify-center">
+                <input
+                  type="text"
+                  class="w-20 border-blue-800 bg-violet-100"
+                  placeholder="Base"
+                  id="triangleBase"
+                />
+                <label for="">cm</label>
+                <input
+                  type="text"
+                  class="w-20 border-blue-800 bg-violet-100"
+                  placeholder="Height"
+                  id="triangleHeight"
+                />
+                <label for="">cm</label>
+              </p>
+              <p>Area : <span id="triangleArea"></span></p>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary w-full" id="btn-triangle">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rectangle Card -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="">
+            <figure>
+              <img
+                src="./geometry-genius-resources/images/rectangle.png"
+                alt="Rectangle"
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="card-title flex justify-center">Rectangle</h2>
+              <p>Area (A) = w x l</p>
+              <p class="flex gap-3 justify-center">
+                <input
+                  type="text"
+                  class="w-20 border-blue-800 bg-violet-100"
+                  placeholder="Width"
+                  id="rectangleWidth"
+                />
+                <label for="">cm</label>
+                <input
+                  type="text"
+                  class="w-20 border-blue-800 bg-violet-100"
+                  placeholder="Length"
+                  id="rectangleLength"
+                />
+                <label for="">cm</label>
+              </p>
+              <p>Area : <span id="rectangleArea"></span></p>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary w-full" id="btn-rectangle">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parallelogram Card -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="">
+            <figure>
+              <img
+                src="./geometry-genius-resources/images/parallelogram.png"
+                alt="Parallelogram"
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="card-title flex justify-center">Parallelogram</h2>
+              <p>Area (A) = b x h</p>
+              <p class="flex gap-3 justify-center">
+                <input
+                  type="text"
+                  class="w-20 border-blue-800 bg-violet-100"
+                  placeholder="Base"
+                  id="parallelogramBase"
+                />
+                <label for="">cm</label>
+                <input
+                  type="text"
+                  class="w-20 border-blue-800 bg-violet-100"
+                  placeholder="Height"
+                  id="parallelogramHeight"
+                />
+                <label for="">cm</label>
+              </p>
+              <p>Area : <span id="parallelogramArea"></span></p>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary w-full" id="btn-parallelogram">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BMI Calculator -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="">
+            <figure>
+              <img
+                src="./geometry-genius-resources/images/BMI.jpg"
+                alt="BMI Calculator"
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="card-title flex justify-center">BMI Calculator</h2>
+              <p>Calculate your Body Mass Index (BMI)</p>
+              <p class="flex gap-3 justify-center">
+                <input
+                  type="text"
+                  class="w-20 border-blue-800 bg-violet-100"
+                  placeholder="Weight (kg)"
+                  id="bmiWeight"
+                />
+                <label for="">kg</label>
+                <input
+                  type="text"
+                  class="w-20 border-blue-800 bg-violet-100"
+                  placeholder="Height (cm)"
+                  id="bmiHeight"
+                />
+                <label for="">cm</label>
+              </p>
+              <p>BMI : <span id="bmiResult"></span></p>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary w-full" id="btn-bmi">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
